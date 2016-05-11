@@ -155,6 +155,7 @@ namespace OpenRSC
         FtpClient client = new FtpClient();
         client.Credentials = new NetworkCredential(settings["Redir-FTPUser"], settings["Redir-FTPPass"]);
         client.Host = fastDLUrl;
+        client.Port = Convert.ToInt16(settings["Redir-FTPPort"]);
         client.DataConnectionType = FtpDataConnectionType.AutoActive;
 
         try
