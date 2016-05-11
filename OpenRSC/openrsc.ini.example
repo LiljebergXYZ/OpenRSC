@@ -1,0 +1,37 @@
+[GameMod]
+csgo
+
+//Enter the path to the gamemod if querying gameserver via local mode
+[ServerPath]
+C:/GAME/CSGO
+
+//-----The following ftp server info is used to connect to the Redirect-----
+//This section is only needed if querying redirect via ftp
+//Redirect:  FQDN or IP of your FTP Server
+//Looking for a good deal on a redirect--checkout www.urldownload.com--prices start at $5/mo
+[Redir-FTPSrvr]
+127.0.0.1
+
+//Redirect:  FTP Server Port (Def 21)
+[Redir-FTPPort]
+21
+
+//Redirect:  FTP Username
+[Redir-FTPUser]
+web
+
+//Redirect:  FTP Password
+[Redir-FTPPass]
+ThePasswordForMyThing
+
+//The root folder of your redirect, must be prefixed with /  ie. /redir.  Leave blank for root
+[Redir-FTPPath]
+/127.0.0.1_27015
+
+//Redirect:  Automatically upload new compressed files to the redirect? (True/False)
+[Redir-Upload]
+True
+
+//Do you want to bzip the files?
+[Compress]
+True
